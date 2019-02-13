@@ -21,6 +21,7 @@ requirements for installation and run
 
 ### **Run**
 after download the project's repository and it's requirements, just run the server file using with command 
+
 ` python server.py`
 
 
