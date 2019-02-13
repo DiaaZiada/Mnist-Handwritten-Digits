@@ -1,3 +1,5 @@
+
+
 # Mnist Handwritten Digits
 
 Mnist Handwritten Digits : is deep learning model that classify the digits between 0  to 9, trained on mnist data-set for hand written digits.
@@ -7,9 +9,9 @@ this repository divided into two parts
 2. server part which hand the equations, front-end stuff and dealing with the prediction model, you could find it [here](https://github.com/xayden/mnist-client#minst-client) with steps and 
 requirements for installation and run
 
-there is a live demo you could play with here.
+![here a GIF for the demo ](https://github.com/DiaaZiada/Mnist-Handwritten-Digits/blob/master/images/demo.gif)
 
-### **Required**
+### **Requirements**
 * [Python](https://www.python.org/) 3.* 
 * [Pytorch](https://pytorch.org/) 
 * [Numpy](http://www.numpy.org/)
