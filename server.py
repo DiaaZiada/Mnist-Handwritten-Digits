@@ -25,7 +25,6 @@ def on_message(data):
     
 @sio.on('user_input')
 def on_image(data):
-    global d
     encoded_image = data.split(",")[1]
     decoded_image = base64.b64decode(encoded_image)
     img = Image.open(BytesIO(decoded_image))
@@ -35,7 +34,6 @@ def on_image(data):
     
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img = img/(255/2)-1
-    d = img
     img = torch.FloatTensor(img)
     img = img.reshape(1,28,28)
     
@@ -48,7 +46,7 @@ def on_image(data):
 def on_disconnect():
     print('disconnected from server')
 
-sio.connect('http://f46bbe57.ngrok.io/')
+sio.connect('http://localhost:3000')
 sio.wait()
 
 
